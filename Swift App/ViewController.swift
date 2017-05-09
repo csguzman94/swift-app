@@ -3,7 +3,7 @@
 //  Swift App
 //
 //  Created by Cody Guzman on 5/8/17.
-//  Copyright © 2017 Cody Guzman. All rights reserved.
+//  Copyright © 2017 Cody Guzman. All rights reserved..
 //
 
 import UIKit
