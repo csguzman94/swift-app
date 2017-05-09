@@ -18,14 +18,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     
-    // button press
+    // button press one
     @IBAction func buttonPress(_ sender: AnyObject) {
         
-        // string interpolation
-        theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        // set constant boolean
+        let addition = false
+        
+        if addition {
+            // string interpolation
+            theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            theLabel.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
+            }
         
     }
-
+    
+    // second button press 
     @IBAction func buttonPressTwo(_ sender: Any) {
         
         theLabel.text = "Buttons are cool"
@@ -37,9 +45,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // change background color
-        //self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.cyan
         
-        // theLabel text
     }
 
     override func didReceiveMemoryWarning() {
