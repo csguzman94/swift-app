@@ -10,23 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    
+    // label outlet
     @IBOutlet weak var theLabel: UILabel!
     
-    // creates count
-    var pressCount = 0
+    //text field outlets
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
     
     // button press
-    @IBAction func buttonPress(_ sender: Any) {
+    @IBAction func buttonPress(_ sender: AnyObject) {
         
-        // increments pressCount
-        pressCount = pressCount + 1
-        
-        if pressCount >= 10 {
-            theLabel.text = "You tapped the button 10 times!"
-        }
-        
-        //theLabel.text = "Welcome"
+        // string interpolation
+        theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
         
     }
 
